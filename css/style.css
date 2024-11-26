@@ -1,6 +1,10 @@
+@font-face {
+    font-family: "MingLiu";
+    src: url(fonts/MingLiU-ExtB.woff);
+}
 body {
     background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
+    font-family: "MingLiu";
     margin: 0;
     padding: 0;
     display: flex;

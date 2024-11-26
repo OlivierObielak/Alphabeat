@@ -18,7 +18,7 @@ Type letters. See letters. See letters DANCING. TO THE BEAT.
 
 
 ## Installation
-None needed! Live Demo: [olivierobielak.github.io/Alphabeat](olivierobielak.github.io/Alphabeat)
+None needed! Live Demo: [olivierobielak.github.io/Alphabeat](https://olivierobielak.github.io/Alphabeat)
 
 Alternatively, for the smoothest experience, clone the repo and open the index.html file!
 

@@ -4,13 +4,14 @@ document.addEventListener("keydown", event => {
 
     if (letterPressed >= `a` && letterPressed <= `z`) {
         const gifDisplayed = `letters/${letterPressed}.gif`;
-        const soundPlayed = `sounds/${letterPressed}.mp3`;
+        const soundPlayed = `beats/${letterPressed}.wav`;
         
 
 
         gifContainer.innerHTML = `<img src="${gifDisplayed}" alt="${letterPressed} GIF">`;
 
         const audio = new Audio(soundPlayed);
+        audio.loop = true;
         audio.play();
     }
 });

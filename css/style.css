@@ -3,7 +3,7 @@
     src: url(fonts/MingLiU-ExtB.woff);
 }
 body {
-    background-color: #f0f0f0;
+    background-color: g;
     font-family: "MingLiu";
     margin: 0;
     padding: 0;
@@ -20,6 +20,6 @@ body {
     flex-wrap: wrap;
 }
 
-.hidden {
-    display: none;
+img {
+    image-rendering: pixelated;
 }

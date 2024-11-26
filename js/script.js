@@ -1,3 +1,5 @@
+let currentBeat = null;
+
 document.addEventListener("keydown", event => {
     const letterPressed = event.key.toLowerCase();
     const gifContainer = document.getElementById("lettergif-container");
@@ -5,13 +7,14 @@ document.addEventListener("keydown", event => {
     if (letterPressed >= `a` && letterPressed <= `z`) {
         const gifDisplayed = `letters/${letterPressed}.gif`;
         const soundPlayed = `beats/${letterPressed}.wav`;
+        if (currentBeat) {
+            currentBeat.pause();
+            currentBeat.currentTime = 0;
+        }
         
-
-
         gifContainer.innerHTML = `<img src="${gifDisplayed}" alt="${letterPressed} GIF">`;
 
-        const audio = new Audio(soundPlayed);
-        audio.loop = true;
-        audio.play();
+        currentBeat = new Audio(soundPlayed);
+        currentBeat.play();
     }
 });
